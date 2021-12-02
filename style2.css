@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  /* Primary */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  --dark-blue: hsl(240, 38%, 20%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  /* min-width: 375px; */
+  /* max-width: 1000px; */
+  background: url(./images/pattern-curve.svg);
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #545454;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+
+  /* margin: 2rem 4rem 2rem 4rem; */
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-weight: 300;
+  color: var(--grayish-blue);
+}
+
+.container {
+  /* background: url(./images/pattern-bg.svg), url(./images/pattern-quotes.svg); */
+  /* background-repeat: no-repeat, no-repeat; */
+  /* background-size: 590px, 100px; */
+  /* background-position: 510px 0px, 100px 65px; */
+  /* margin: 3rem 8rem 0rem 8rem; */
+  padding-bottom: 6rem;
+  height: 100%;
+
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  /* align-content: center; */
+  /* align-content: center; */
+  grid-template-columns: 1000px;
+  grid-template-rows: 500px;
+  /* align-content: center; */
+  /* width: 900px; */
+}
+
+.presentation {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  /* grid-auto-flow: column; */
+  gap: 1rem;
+}
+
+.info {
+  font-size: 1.3rem;
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+}
+
+.description {
+  /* position: relative;
+  width: 500px; */
+}
+
+.info-person {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: grid;
+  justify-content: start;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+
+.name {
+  font-weight: 500;
+  color: var(--very-dark-blue);
+}
+
+.work {
+  font-weight: 500;
+}
+
+.person {
+  display: grid;
+  align-items: center;
+}
+.person-img {
+  border-radius: 0.5rem;
+  box-shadow: 0px 30px 20px 0px hsl(0deg 0% 0% / 15%);
+}
+
+.social {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 2rem;
+  /* height: 30px; */
+}
+
+.social-link {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+  /* margin: 1rem; */
+  /* padding: 10px; */
+  height: 45px;
+  /* padding: 1rem; */
+  width: 100px;
+
+  /* width: 100%; */
+  /* background: hsl(245, 75%, 52%); */
+  border: none;
+  color: hsl(225, 100%, 98%);
+  /* box-shadow: 0px 20px 20px 0px hsl(245deg 75% 52% / 20%); */
+  box-shadow: 0px 10px 10px 0px hsl(0deg 0% 0% / 15%);
+  font-weight: bold;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+
+.social-link:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp {
+  background: linear-gradient(
+    45deg,
+    rgba(164, 198, 57, 1) 0%,
+    rgba(106, 186, 46, 1) 50%,
+    rgba(52, 175, 35, 1) 100%
+  );
+}
+
+.instagram {
+  background: #d6249f;
+  background: linear-gradient(45deg, #405de6 0%, #c13584 50%, #fd1d1d 100%);
+}
+
+.icons {
+  height: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 200px;
+
+  justify-items: center;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  /* gap: 1.5rem; */
+}
+
+.a {
+  border-top: solid 5px #3bbed8;
+}
+
+.b {
+  border-top: solid 5px #f7e6b0;
+}
+
+.c {
+  border-top: solid 5px #2740af;
+}
+
+.card {
+  display: grid;
+  width: 100%;
+  /* background: var(--very-light-gray); */
+  background: white;
+  /* padding: 1rem; */
+  /* width: 300px; */
+  /* height: 200px; */
+  border-radius: 0.5rem;
+  box-shadow: 5px 0px 20px 10px hsl(0deg 0% 0% / 15%);
+  transition: transform 0.1s linear;
+  text-decoration: none;
+  color: var(--very-dark-blue);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  display: grid;
+  grid-template-rows: 55px auto;
+  gap: 1rem;
+  margin: 0rem;
+  padding: 1rem;
+}
+
+.card-top {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.card-description {
+  /* display: grid; */
+}
+.card-icon {
+  height: 55px;
+}
+.card-title {
+  font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+  body,
+  html {
+    font-size: 12px;
+    /* margin-top: 4rem; */
+  }
+  .container {
+    margin: 0;
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: 5rem 0 0 0;
+  }
+
+  .presentation {
+    grid-template-columns: 300px;
+    text-align: center;
+  }
+
+  .info-person {
+    justify-content: center;
+    grid-auto-flow: row;
+    gap: 0;
+  }
+
+  .social {
+    justify-content: center;
+    grid-auto-flow: row;
+    gap: 1rem;
+  }
+  .person {
+    order: 1;
+  }
+  .info {
+    order: 2;
+  }
+  .person-img {
+    height: 210px;
+    justify-self: center;
+  }
+
+  .title {
+    /* text-align: center ; */
+  }
+  .description {
+    /* text-align: center; */
+  }
+
+  .cards {
+    grid-template-rows: repeat(3, 210px);
+    grid-template-columns: 300px;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
